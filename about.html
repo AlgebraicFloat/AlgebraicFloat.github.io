@@ -75,9 +75,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="/team">Team</a>
               </li>
+              <!--
               <li class="nav-item">
                 <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
               </li>
+            -->
             </ul>
           </div>
         </nav>
@@ -86,8 +88,6 @@
     <!-- end header section -->
   </div>
 
-  <!-- about section -->
-
   <section class="about_section layout_padding">
     <div class="container  ">
       <div class="heading_container heading_center">
@@ -95,42 +95,34 @@
           About <span>Us</span>
         </h2>
         <p>
-          Magni quod blanditiis non minus sed aut voluptatum illum quisquam aspernatur ullam vel beatae rerum ipsum voluptatibus
+          At Minimized, we're dedicated to reshaping the future of AI, making it accessible and secure for everyone. Founded by Gabriel Catalfo, a passionate Computer Engineering PhD student at Stony Brook University, our journey is rooted in the belief that privacy is paramount.
         </p>
       </div>
       <div class="row">
         <div class="col-md-6 ">
           <div class="img-box">
-            <img src="images/about-img.png" alt="">
+            <img src="images/computer.png" alt="About Minimized">
           </div>
         </div>
         <div class="col-md-6">
           <div class="detail-box">
             <h3>
-              Minimized AI
+              Empowering Through AI
             </h3>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+             Minimized was founded out of a concern for the disproportionate power large corporations hold over AI technologies—operating models on their servers, which compromises user privacy. At Minimized, we're changing the narrative by enabling the operation of Large Language Models (LLMs) directly on your device. This approach ensures that your interactions remain private, giving the power of AI back to the people.
             </p>
             <p>
-              Molestiae odio earum non qui cumque provident voluptates, repellendus exercitationem, possimus at iste corrupti officiis unde alias eius ducimus reiciendis soluta eveniet. Nobis ullam ab omnis quasi expedita.
+              Our mission is to democratize AI, offering cutting-edge, personalized, and secure AI experiences that respect your privacy and autonomy. We envision a world where AI empowers everyone, without sacrificing the confidentiality of their data.
             </p>
-            <a href="">
-              Read More
-            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- end about section -->
+  
 
   <!-- info section -->
-
   <section class="info_section layout_padding2">
     <div class="container">
       <div class="row">
@@ -140,37 +132,37 @@
               Address
             </h4>
             <div class="contact_link_box">
-              <a href="">
+              <a>
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Location
+                  Stony Brook, New York
                 </span>
               </a>
-              <a href="">
+              <a>
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                  +1 (631) 560-2349
                 </span>
               </a>
-              <a href="">
+              <a href="mailto:minimizedstartup@gmail.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  support@minimized.ai
                 </span>
               </a>
             </div>
           </div>
           <div class="info_social">
-            <a href="">
+            <a>
               <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>
-            <a href="">
+            <a>
               <i class="fa fa-twitter" aria-hidden="true"></i>
             </a>
-            <a href="">
+            <a>
               <i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
-            <a href="">
+            <a>
               <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
           </div>
@@ -181,7 +173,7 @@
               Info
             </h4>
             <p>
-              necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
+              AI that runs in the background!
             </p>
           </div>
         </div>
@@ -213,25 +205,32 @@
           <h4>
             Subscribe
           </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
+          <form action="javascript:void(0);" onsubmit="sendEmail(this)">
+            <input type="email" name="email" placeholder="Enter email" required />
             <button type="submit">
               Subscribe
             </button>
           </form>
         </div>
+        
+        <script>
+        function sendEmail(form) {
+          var email = form.email.value;
+          var subject = encodeURIComponent("Subscription Request");
+          var emailBody = encodeURIComponent("I would like to subscribe with the following email: ") + email;
+          window.location.href = "mailto:minimizedstartup@gmail.com?subject=" + subject + "&body=" + emailBody;
+        }
+        </script>
       </div>
     </div>
   </section>
-
   <!-- end info section -->
 
   <!-- footer section -->
   <section class="footer_section">
     <div class="container">
       <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
+        &copy; <span id="displayYear"></span> All Rights Reserved By Minimized LLC
       </p>
     </div>
   </section>

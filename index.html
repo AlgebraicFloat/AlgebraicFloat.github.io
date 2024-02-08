@@ -340,8 +340,6 @@
 </section>
 <!-- end team section -->
 
-
-
   <!-- client section -->
   <section class="client_section layout_padding">
     <div class="container">
@@ -451,7 +449,6 @@
   <!-- end client section -->  
 
   <!-- info section -->
-
   <section class="info_section layout_padding2">
     <div class="container">
       <div class="row">
@@ -544,7 +541,7 @@
         
         <script>
         function sendEmail(form) {
-          var email = form.email.value; // Get the email value from the form
+          var email = form.email.value;
           var subject = encodeURIComponent("Subscription Request");
           var emailBody = encodeURIComponent("I would like to subscribe with the following email: ") + email;
           window.location.href = "mailto:minimizedstartup@gmail.com?subject=" + subject + "&body=" + emailBody;
