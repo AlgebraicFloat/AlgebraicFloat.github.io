@@ -343,7 +343,6 @@
 
 
   <!-- client section -->
-
   <section class="client_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center psudo_white_primary mb_45">
@@ -362,16 +361,17 @@
                 <div class="client_id">
                   <div class="client_info">
                     <h6>
-                      LusDen
+                      Alex Johnson
                     </h6>
                     <p>
-                      magna aliqua. Ut
+                      CEO at InnovateX
                     </p>
                   </div>
                   <i class="fa fa-quote-left" aria-hidden="true"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                  "Minimized transformed our operations with its on-device AI, ensuring our data privacy and security while boosting efficiency. A game-changer for our business."
+                </p>
               </div>
             </div>
           </div>
@@ -384,60 +384,63 @@
                 <div class="client_id">
                   <div class="client_info">
                     <h6>
-                      Zen Court
+                      Samantha Green
                     </h6>
                     <p>
-                      magna aliqua. Ut
+                      CTO at TechSolutions
                     </p>
                   </div>
                   <i class="fa fa-quote-left" aria-hidden="true"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                  "The customizability of Minimized's AI models has allowed us to tailor the technology precisely to our needs, enhancing both our productivity and product offerings."
+                </p>
               </div>
             </div>
           </div>
           <div class="item">
             <div class="box">
               <div class="img-box">
-                <img src="images/client1.jpg" alt="" class="box-img">
+                <img src="images/client3.jpg" alt="" class="box-img">
               </div>
               <div class="detail-box">
                 <div class="client_id">
                   <div class="client_info">
                     <h6>
-                      LusDen
+                      Danny Hall
                     </h6>
                     <p>
-                      magna aliqua. Ut
+                      Marketing Director at CreativeMinds
                     </p>
                   </div>
                   <i class="fa fa-quote-left" aria-hidden="true"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                  "Thanks to Minimized, our team can focus on creativity and innovation without worrying about data breaches. Their commitment to privacy is unmatched."
+                </p>
               </div>
             </div>
           </div>
           <div class="item">
             <div class="box">
               <div class="img-box">
-                <img src="images/client2.jpg" alt="" class="box-img">
+                <img src="images/client4.jpg" alt="" class="box-img">
               </div>
               <div class="detail-box">
                 <div class="client_id">
                   <div class="client_info">
                     <h6>
-                      Zen Court
+                      Emily Carter
                     </h6>
                     <p>
-                      magna aliqua. Ut
+                      Founder at GreenTech
                     </p>
                   </div>
                   <i class="fa fa-quote-left" aria-hidden="true"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                  "Minimized's approach to AI is revolutionary, providing powerful tools while ensuring full control over our data. A true partner in innovation."
+                </p>
               </div>
             </div>
           </div>
@@ -445,9 +448,7 @@
       </div>
     </div>
   </section>
-
-  <!-- end client section -->
-
+  <!-- end client section -->  
 
   <!-- info section -->
 
@@ -460,37 +461,37 @@
               Address
             </h4>
             <div class="contact_link_box">
-              <a href="">
+              <a>
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Location
+                  Stony Brook, New York
                 </span>
               </a>
-              <a href="">
+              <a>
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +01 1234567890
+                  +1 (631) 560-2349
                 </span>
               </a>
-              <a href="">
+              <a href="mailto:minimizedstartup@gmail.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  support@minimized.ai
                 </span>
               </a>
             </div>
           </div>
           <div class="info_social">
-            <a href="">
+            <a>
               <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>
-            <a href="">
+            <a>
               <i class="fa fa-twitter" aria-hidden="true"></i>
             </a>
-            <a href="">
+            <a>
               <i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
-            <a href="">
+            <a>
               <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
           </div>
@@ -501,7 +502,7 @@
               Info
             </h4>
             <p>
-              necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
+              AI that runs in the background!
             </p>
           </div>
         </div>
@@ -533,17 +534,25 @@
           <h4>
             Subscribe
           </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
+          <form action="javascript:void(0);" onsubmit="sendEmail(this)">
+            <input type="email" name="email" placeholder="Enter email" required />
             <button type="submit">
               Subscribe
             </button>
           </form>
         </div>
+        
+        <script>
+        function sendEmail(form) {
+          var email = form.email.value; // Get the email value from the form
+          var subject = encodeURIComponent("Subscription Request");
+          var emailBody = encodeURIComponent("I would like to subscribe with the following email: ") + email;
+          window.location.href = "mailto:minimizedstartup@gmail.com?subject=" + subject + "&body=" + emailBody;
+        }
+        </script>
       </div>
     </div>
   </section>
-
   <!-- end info section -->
 
   <!-- footer section -->
